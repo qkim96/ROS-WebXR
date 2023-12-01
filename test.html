@@ -24,7 +24,7 @@
         console.log('Connection to ROS closed');
       });
 
-      ros.connect('ws://' + my_ip + ':8080');
+      ros.connect('wss://' + my_ip + ':8080');
 
       // Subscribing to a Topic
       var listener = new ROSLIB.Topic({

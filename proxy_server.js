@@ -9,7 +9,7 @@ const wss = new WebSocket.Server({ server });
 
 wss.on('connection', (ws, req) => {
   // Connect to the actual ROS server
-  const rosServer = new WebSocket('ws://192.168.0.45:9090');
+  const rosServer = new WebSocket('wss://192.168.0.45:9090');
 
   // Pipe messages between the proxy and ROS server
   ws.on('message', (message) => rosServer.send(message));
