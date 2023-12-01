@@ -1,0 +1,8 @@
+prefix=/home/kyu/Documents/ROS-WebXR/src/ws/install
+
+Name: teleop
+Description: Description of teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
