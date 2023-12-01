@@ -24,7 +24,7 @@
         console.log('Connection to ROS closed');
       });
 
-      ros.connect('wss://' + my_ip + ':8080');
+      ros.connect('ws://' + my_ip + ':8080');
 
       // Subscribing to a Topic
       var listener = new ROSLIB.Topic({
@@ -48,4 +48,3 @@
   <h1>Simple roslib Example</h1>
   <p>Run the following commands in the terminal then refresh this page. Check the JavaScript console for the output.</p>
 </body>
-</html>
