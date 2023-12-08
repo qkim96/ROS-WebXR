@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
-<!-- Change the size of the AR object according to cmd_vel -->
-<!-- Works if this is executed on the device running roscore -->
-<!-- When this html file is opened on other device, -->
-<!-- AR only works on https (does not work on http) -->
-<!-- ROS WebSocket connection does not work on https due to CORS (works on http) -->
-<!-- Need to solve CORS problem to have both AR and ROS work at the same time -->
+<!-- Change the size of the AR object according to /cmd_vel -->
 
 <html>
   <head>
@@ -23,8 +18,10 @@
       <a-entity camera></a-entity>
 
       <script>
-        var my_ip = "192.168.0.45"
+        console.log("Start!")
+        var my_ip = "192.168.0.45"  // check IP address with "hostname -I"
         var ros = new ROSLIB.Ros();
+        console.log("My IP Address is: " + my_ip)
 
         ros.on('error', function(error) {
           console.log('Error connecting to ROS: ', error);
@@ -38,7 +35,8 @@
           console.log('Connection to ROS closed');
         });
         
-        ros.connect('ws://' + my_ip + ':9090');
+        // ros.connect('ws://localhost:9090');    // When connecting to ROS from device running roscore (http)
+        ros.connect('wss://' + my_ip + ':9090');  // When connecting to ROS from different device (https)
 
         var marker = document.querySelector("a-marker");
         var box = marker.querySelector("a-octahedron");
