@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- Change the size of the AR object dynamically (No ROS) -->
+
+<html>
+  <head>
+    <title>AR Demo</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/Ar.js/1.6.2/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-octahedron position="0 0.5 0" radius="0.1" material="color: #87CEEB; opacity: 0.7;" size-updater></a-octahedron>
+      </a-marker>
+      <a-entity camera></a-entity>
+
+      <script>
+        var marker = document.querySelector("a-marker");
+        var box = marker.querySelector("a-octahedron");
+        var newSize = 0.1;
+
+        function updateSize() {
+          box.setAttribute("scale", `${newSize} ${newSize} ${newSize}`);
+        }
+
+        setInterval(function() {
+          newSize += 0.1;
+          if (newSize > 3.0) {
+            newSize = 0.1;
+          }
+          updateSize();
+        }, 50);
+      </script>
+    </a-scene>
+  </body>
+</html>
