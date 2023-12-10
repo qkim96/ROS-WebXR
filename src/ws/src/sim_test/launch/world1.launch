@@ -4,6 +4,6 @@
   <param name="model" value="$(arg model)"/>
 
   <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_stage_1.launch" />
-  <include file="$(find turtlebot3_teleop)/launch/turtlebot3_teleop_key.launch" />
+  <include file="$(find sim_test)/launch/rviz.launch" />
 
 </launch>

@@ -1,0 +1,8 @@
+prefix=/home/kyu/Documents/ROS-WebXR/src/ws/devel
+
+Name: sim_test
+Description: Description of sim_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
