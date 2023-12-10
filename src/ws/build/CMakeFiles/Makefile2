@@ -59,7 +59,6 @@ all: turtlebot3_msgs/all
 all: turtlebot3/turtlebot3_navigation/all
 all: turtlebot3_simulations/turtlebot3_simulations/all
 all: sim_test/all
-all: teleop/all
 all: turtlebot3/turtlebot3_bringup/all
 all: turtlebot3/turtlebot3_example/all
 all: turtlebot3_simulations/turtlebot3_fake/all
@@ -77,7 +76,6 @@ preinstall: turtlebot3_msgs/preinstall
 preinstall: turtlebot3/turtlebot3_navigation/preinstall
 preinstall: turtlebot3_simulations/turtlebot3_simulations/preinstall
 preinstall: sim_test/preinstall
-preinstall: teleop/preinstall
 preinstall: turtlebot3/turtlebot3_bringup/preinstall
 preinstall: turtlebot3/turtlebot3_example/preinstall
 preinstall: turtlebot3_simulations/turtlebot3_fake/preinstall
@@ -100,7 +98,6 @@ clean: turtlebot3_msgs/clean
 clean: turtlebot3/turtlebot3_navigation/clean
 clean: turtlebot3_simulations/turtlebot3_simulations/clean
 clean: sim_test/clean
-clean: teleop/clean
 clean: turtlebot3/turtlebot3_bringup/clean
 clean: turtlebot3/turtlebot3_example/clean
 clean: turtlebot3_simulations/turtlebot3_fake/clean
@@ -194,24 +191,6 @@ sim_test/clean: sim_test/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 sim_test/clean: sim_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : sim_test/clean
-
-#=============================================================================
-# Directory level rules for directory teleop
-
-# Recursive "all" directory target.
-teleop/all:
-
-.PHONY : teleop/all
-
-# Recursive "preinstall" directory target.
-teleop/preinstall:
-
-.PHONY : teleop/preinstall
-
-# Recursive "clean" directory target.
-teleop/clean:
-
-.PHONY : teleop/clean
 
 #=============================================================================
 # Directory level rules for directory turtlebot3/turtlebot3
