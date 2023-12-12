@@ -197,7 +197,7 @@ sudo cp index_simulation.html /var/www/html/
 
 #### 16. Host Apache HTTPS server
 ```
-systemclt restart apache2; systemctl status apache2
+systemctl restart apache2; systemctl status apache2
 ```
 
 #### 17. Run on mobile device
