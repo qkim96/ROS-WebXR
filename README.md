@@ -123,6 +123,14 @@ sudo chmod 600 /etc/apache2/certificate/apache.key
 ```
 
 #### 7. Change ownership of the RSA key
+&nbsp;&nbsp;&nbsp; - check your user/group names
+```
+id
+```
+&nbsp;&nbsp;&nbsp; - this should print out
+```
+uid=1000(USERNAME) gid=1000(GROUPNAME) groups=1000(GROUPNAME),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+```
 &nbsp;&nbsp;&nbsp; - change "user" and "group" to your user/group names
 ```
 sudo chown user:group /etc/apache2/certificate/apache-certificate.crt
