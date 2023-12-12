@@ -104,8 +104,8 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
 <VirtualHost *:443>
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/html
-    ErrorLog ${APACHE_LOG_DIR}\error.log
-    CustomLog ${APACHE_LOG_DIR}\access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
     SSLEngine on
     SSLCertificateFile /etc/apache2/certificate/apache-certificate.crt
     SSLCertificateKeyFile /etc/apache2/certificate/apache.key
