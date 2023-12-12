@@ -1,6 +1,6 @@
 # ROS-WebXR Integration for Intuitive AR Robot Control
 
-## About The Project
+## About the Project
 This project utilizes Robot Operating System (ROS) in conjunction with WebXR, a web-based Augmented Reality (AR) platform, to facilitate convenient interaction with robots through a web browser on any mobile devices.  
 <br/>
 The integration of ROS and WebXR optimizes user interactions with robots for non-experts by eliminating any process reliant on background knowledge in robot control or utilization of AR applications.  
