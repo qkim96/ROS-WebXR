@@ -1,13 +1,16 @@
 # ROS-WebXR Integration for Intuitive AR Robot Control
 
 ## About The Project
-Utilize Robot Operating System (ROS) in conjunction with WebXR, a web-based Augmented Reality (AR) platform, to facilitate convenient interaction with robots through a web browser on any mobile devices.  
-Optimized user interactions with robots for non-experts by eliminating any process reliant on background knowledge in robot control or utilization of AR applications.  
+This project utilizes Robot Operating System (ROS) in conjunction with WebXR, a web-based Augmented Reality (AR) platform, to facilitate convenient interaction with robots through a web browser on any mobile devices.  
 <br/>
-Improving human-robot interactions via AR offers a better understanding of the robot perception. However, challenges in developing AR applications persist for both the developers and the users. Each time a developer modifies even a minor feature, recompilation is necessary, and users are required to download and comprehend the updated app. In addition, proficiency in ROS is also necessary for effective robot control, adding complexity to user engagement. Addressing these issues is crucial for enhancing the experience interacting with robots. This project aims to eliminate these challenges, thereby optimizing human-robot interactions.  
+The integration of ROS and WebXR optimizes user interactions with robots for non-experts by eliminating any process reliant on background knowledge in robot control or utilization of AR applications.  
 <br/>
-By simply going to a specific link on a mobile device, any users with a phone can teleoperate a robot with buttons on the screen and observe the LIDAR data displayed as AR.  
+Improving human-robot interactions using Augmented Reality offers a better understanding of the robot perception. However, challenges in developing AR applications persist for both the developers and the users. Each time a developer modifies even a minor feature, recompilation is necessary, and users are required to download and comprehend the updated app. In addition, proficiency in ROS is also necessary for effective robot control, adding complexity to user engagement. Addressing these issues is crucial for enhancing the experience interacting with robots. This project aims to eliminate these challenges, thereby optimizing human-robot interactions.  
 <br/>
+By simply accessing a designated link, any users with a mobile device can teleoperate a robot with buttons on the screen and observe the LIDAR data displayed as AR.  
+<br/>
+
+## Simulation
 For simulation, TurtleBot3 Burger is used in a Gazebo simulated environment.
 <img src="https://raw.githubusercontent.com/qkim96/ROS-WebXR/main/image/screenshot_simulation.png" width=100% align="center"  />  
 <br/>
